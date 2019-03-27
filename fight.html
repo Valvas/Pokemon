@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon - Fight</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fight.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="fightContainer">
+        <img src="./pictures/background.jpg" class="fightContainerBackground" />
+        <div class="fightInnerContainer">
+          <div class="fightTopOpponent">
+            <div class="fightOpponentInfo">
+              <div id="topOpponentName" class="fightOpponentInfoName"></div>
+              <div class="fightOpponentInfoHealth">
+                <div id="topOpponentHealthFiller" class="fightOpponentInfoHealthFiller"></div>
+                <div id="topOpponentHealthStatus" class="fightOpponentInfoHealthStatus"></div>
+              </div>
+            </div>
+            <div class="fightTopOpponentGif">
+              <img id="topOpponentGif" src="./gif/bulbasaur_front.gif" />
+            </div>
+          </div>
+          <div class="fightBottomOpponent">
+            <div class="fightBottomOpponentGif">
+              <img id="bottomOpponentGif" src="./gif/pikachu_back.gif" />
+            </div>
+            <div class="fightOpponentInfo">
+              <div id="bottomOpponentName" class="fightOpponentInfoName"></div>
+              <div class="fightOpponentInfoHealth">
+                <div id="bottomOpponentHealthFiller" class="fightOpponentInfoHealthFiller"></div>
+                <div id="bottomOpponentHealthStatus" class="fightOpponentInfoHealthStatus"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logsContainer">
+        <div class="logsContainerTitle">Fight progress</div>
+        <div class="logsContainerList" id="logsList"></div>
+      </div>
+    </div>
+    <script src="./js/classes.js"></script>
+    <script src="./js/fight.js"></script>
+  </body>
+</html>
